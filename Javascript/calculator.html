@@ -4,69 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marks Calculator</title>
-  <style>
-        body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 350px;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    label {
-      font-size: 1rem;
-      color: #444;
-    }
-
-    input {
-      padding: 8px;
-      margin: 10px 0;
-      width: 80%;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    button {
-      padding: 10px 20px;
-      margin-top: 15px;
-      border: none;
-      border-radius: 5px;
-      background: #0077cc;
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #005fa3;
-    }
-
-    #result {
-      margin-top: 20px;
-      font-size: 1rem;
-      color: #222;
-      text-align: left;
-    }
-  </style>
-  
+  <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
   <div class="container">
@@ -77,34 +15,6 @@
     <div id="result"></div>
   </div>
 
-  <script>
-    function calculateResult() {
-      let n = document.getElementById("subjects").value;
-      let total = 0;
-      for (let i = 1; i <= n; i++) {
-        let marks = parseFloat(prompt("Enter marks for subject " + i));
-        total += marks;
-      }
-      let average = total / n;
-      let grade;
-      let result;
-
-      if (average >= 90) grade = "A+";
-      else if (average >= 80) grade = "A";
-      else if (average >= 70) grade = "B+";
-      else if (average >= 60) grade = "B";
-      else if (average >= 50) grade = "C";
-      else grade = "F";
-
-      if (average >= 40) result = "Pass";
-      else result = "Fail";
-
-      document.getElementById("result").innerHTML =
-        "Total Marks: " + total + "<br>" +
-        "Average Marks: " + average.toFixed(2) + "<br>" +
-        "Grade: " + grade + "<br>" +
-        "Result: " + result;
-    }
-  </script>
+    <script src="condition.js"></script>
 </body>
 </html>
