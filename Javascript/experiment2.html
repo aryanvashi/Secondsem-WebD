@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="experiment2.css">
+</head>
+<body>
+    <h2>Employee Records System</h2>
+    
+    <div class="input-section">
+        <input type="text" id="empName" placeholder="Employee Name">
+        <input type="text" id="empID" placeholder="Employee ID">
+        <input type="number" id="empSalary" placeholder="Salary">
+        <input type="text" id="empDept" placeholder="Department">
+        <button onclick="addEmployee()">Add Employee</button>
+    </div>
+
+    <div class="controls">
+        <button onclick="displayAll()">Display All</button>
+        <button onclick="filterHighSalary()">Salary > 50,000</button>
+        <button onclick="calculateTotalPayout()">Total Payout</button>
+        <button onclick="calculateAverage()">Average Salary</button>
+        <button onclick="countInDept()">Count in Dept</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script src="experiment2.js"></script>
+</body>
+</html>
