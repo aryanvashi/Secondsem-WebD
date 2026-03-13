@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Marks System</title>
+  <link rel="stylesheet" href="assessment1.css">
+</head>
+<body>
+  <h2>Enter Student Details</h2>
+  <input id="stuName" placeholder="Name">
+  <input id="stuRoll" placeholder="Roll Number">
+  <input id="stuMath" type="number" placeholder="Math Marks">
+  <input id="stuScience" type="number" placeholder="Science Marks">
+  <input id="stuEnglish" type="number" placeholder="English Marks">
+  <button onclick="addStudent()">Add Student</button>
+  
+  <h2>Actions</h2>
+  <button onclick="displayAll()">Display All Students</button>
+  <button onclick="calculateTotals()">Calculate Totals</button>
+  <button onclick="calculateAverage()">Calculate Averages</button>
+  <button onclick="filterHigh()">Students Above 80 Avg</button>
+  <button onclick="filterFail()">Failed Students</button>
+  <button onclick="countStudents()">Count Students</button>
+  
+  <div id="results"></div>
+  <script src="assessment1.js"></script>
+</body>
+</html>
