@@ -1,0 +1,33 @@
+.student-card {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease-in-out;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-name {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.student-marks {
+  font-size: 1rem;
+  color: #16a085;
+  margin: 5px 0;
+}
+
+.student-grade {
+  font-size: 1rem;
+  color: #2980b9;
+  margin: 5px 0;
+  font-weight: bold;
+}
